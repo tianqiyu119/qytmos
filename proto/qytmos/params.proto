@@ -1,0 +1,12 @@
+syntax = "proto3";
+package tianqiyu119.qytmos.qytmos;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/tianqiyu119/qytmos/x/qytmos/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package tianqiyu119.qytmos.qytmos;
+
+import "gogoproto/gogo.proto";
+import "qytmos/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/tianqiyu119/qytmos/x/qytmos/types";
+
+// GenesisState defines the qytmos module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
